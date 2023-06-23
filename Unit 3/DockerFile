@@ -1,0 +1,10 @@
+FROM ubuntu 
+
+
+RUN apt update
+RUN apt upgrade -y
+RUN apt install python3 -y
+RUN apt install python3-pip -y
+RUN apt install curl -y
+
+RUN pip3 install numpy pandas
